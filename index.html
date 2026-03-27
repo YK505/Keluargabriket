@@ -256,6 +256,59 @@
     color: rgba(255,255,255,0.4); font-size: 0.8rem; letter-spacing: 0.1em;
   }
 
+  /* ── KATALOG E-COMMERCE ── */
+  .katalog-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+    gap: 30px; 
+    margin-top: 50px; 
+  }
+  .product-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  }
+  .product-card .gallery-item {
+    border-radius: 0; /* Menyesuaikan sudut gambar dengan kartu */
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .product-info {
+    padding: 24px;
+    text-align: center;
+  }
+  .product-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    color: var(--coal);
+  }
+  .btn-shopee {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #ee4d2d; /* Warna oranye identik Shopee */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  .btn-shopee:hover {
+    background: #d74326;
+    color: #ffffff;
+  }
+
+
   /* ── KONTAK ── */
   .contact-section { background: var(--coal); color: var(--white); text-align: center; }
   .contact-section .section-title { color: var(--white); }
@@ -475,6 +528,7 @@
   <div class="lb-counter" id="lbCounter"></div>
 </div>
 
+
 <!-- KONTAK -->
 <section id="kontak" class="contact-section">
   <div class="section-container reveal">
@@ -497,6 +551,11 @@
       <a href="https://tiktok.com/@keluargabriket" target="_blank" class="social-icon" aria-label="TikTok">
         <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.95v7.49c-.01 2.95-1.52 5.81-3.99 7.46-2.47 1.64-5.61 1.98-8.35.9-2.73-1.07-4.83-3.41-5.63-6.22-1.02-3.66.44-7.69 3.51-9.67 2.11-1.37 4.75-1.6 7.15-.65v4.38c-1.24-.52-2.67-.3-3.75.52-1.09.83-1.68 2.22-1.47 3.6.21 1.38 1.18 2.56 2.47 3 1.29.45 2.77.26 3.88-.5 1.11-.75 1.76-2.04 1.75-3.41V0h-2.19c.14.01.29.01.44.02z"/></svg>
       </a>
+    <a href="https://shopee.co.id/keluargabriket" target="_blank" class="social-icon" title="Shopee">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M8.5 7.5V5.5C8.5 3.5 10.1 2 12 2C13.9 2 15.5 3.5 15.5 5.5V7.5H19.5C20.1 7.5 20.6 8 20.6 8.6L19.1 20.6C19 21.4 18.3 22 17.5 22H6.5C5.7 22 5 21.4 4.9 20.6L3.4 8.6C3.4 8 3.9 7.5 4.5 7.5H8.5ZM10.5 7.5H13.5V5.5C13.5 4.6 12.8 3.9 12 3.9C11.2 3.9 10.5 4.6 10.5 5.5V7.5ZM12 11.5C10.6 11.5 9.5 12.3 9.5 13.5C9.5 14.7 10.6 15.5 12 15.5C13.2 15.5 14 16 14 16.5C14 17 13.2 17.5 12 17.5C10.5 17.5 9.2 16.8 9.2 16.8V18.8C9.2 18.8 10.5 19.5 12 19.5C13.4 19.5 14.5 18.7 14.5 17.5C14.5 16.3 13.4 15.5 12 15.5C10.8 15.5 10 15 10 14.5C10 14 10.8 13.5 12 13.5C13.5 13.5 14.8 14.2 14.8 14.2V12.2C14.8 12.2 13.5 11.5 12 11.5Z"/>
+      </svg>
+    </a>
     </div>
   </div>
 </section>
